@@ -1,2 +1,2 @@
 # aws-lambda-hello-world
-Simple hello world application written in python
+A very simple hello world application written in python to validate the usage of a batect bundle in building and developing a lambda function.

@@ -1,0 +1,13 @@
+include:
+  - type: git
+    repo: git@github.com:ben-cart3r/batect-bundle-aws-lambda-python.git
+    ref: main
+
+tasks:
+  test:integration:
+    description: Run integration tests
+    dependencies:
+      - lambda
+    run:
+      container: test_runner
+      command: "pytest /code/test/integration"
